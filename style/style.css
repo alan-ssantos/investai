@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+/*
+font-family: 'Open Sans', sans-serif;
+#010f39, rgb(1, 15, 57) - azul 0h
+#045449, rgb(4, 84, 73) - meio-termo
+#069959, rgb(6, 153, 89) - verde top
+*/
+
+body{
+	margin-top: 54px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*INICIO NAVBAR*/
+.navbar{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.navbar-brand{
+	padding: 0;
+	line-height: 46px;
+}
+
+.navbar-brand img{	height: 36px;	}
+
+.btn-nav {
+    border-radius: 100px;
+    height: 38px;
+    padding: 7px 20px;
+    background: #069959;
+    border: 1px solid #0c8d5a;
+    font-size: .9em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.btn-nav:hover{
+	color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.btn-nav:active, .btn-nav:focus {
+    background: #045449;
+}
+
+/*FIM NAVBAR*/
+
+/*INICIO JUMBOTRON (BANNER)*/
+.jumbotron{
+	height: calc(100vh - 110px);
+    padding: 0;
+	margin-bottom: 0px;
+    background: rgba(16, 31, 57, 0.3);
+	text-align: center;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+    border-radius: 0;
+}
+
+.jumbotron:after{
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    z-index: -1000;
+    height: calc(100vh - 110px);
+	margin-top: 50px;
+    background: url(../images/back02-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.jumbotron h1{
+	font-weight: 900;
+	font-size: 3.5em;
+	text-transform: uppercase;
+}
+
+/*INICIO JUMBOTRON-SM (MENOR)*/
+.jumbo-sm{ height: 30vh; }
+
+.jumbo-sm:after{
+	height: 30vh;
+	background: url(../images/back03.jpg) no-repeat center;
+}
+
+.jumbo-sm h1{
+	font-weight: bold;
+	font-size: 2.5em;
+}
+/*FIM JUMBOTRON-SM (MENOR)*/
+
+.jumbotron .lead{ font-size: 1.7em; }
+
+#jumbotron-welcome{
+	/*TENTAR MUDAR PARA DISPLAY FLEX*/
+	position: relative;top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	/*TENTAR MUDAR PARA DISPLAY FLEX*/
+	margin: 0;
+	padding: 0;
+}
+/*FIM JUMBOTRON (BANNER)*/
+
+/* INICIO SECTIONS */
+.section{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	flex-wrap: nowrap;
+}
+
+.section h1{ font-size: 2.5em; }
+.section h2{ font-size: 2em; }
+.section h3{ font-size: 1.5em; }
+.section h1, .section h2, .section h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.section p{
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+
+.s-intro {
+	margin: 40px 0;
+	text-align: center;
+}
+
+.s-intro h1, .s-intro h2{ font-size: 2.5em; }
+.s-intro p{
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+
+.s-card { text-align: center; }
+
+.s-card h3{
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+.s-card p{ font-size: 1.2em; }
+.s-card img{ width: 7em; }
+
+.s-list{
+
+}
+
+.s-list img {
+	height: 18em;
+	width: auto;
+}
+
+#sobre, #contato{ margin-top: 100px; }
+
+.contato-form input, .contato-form label{
+	margin: 5px 0;
+}
+
+.contato-form .btn{ margin-top: 20px; }
+
+.chat > .row, .contato > .row{
+	padding: 0;
+	margin: 0;
+}
+
+.chat, .contato {
+	background: linear-gradient(-45deg, rgba(220, 220, 220, 1), rgba(250, 250, 250,1));
+	padding: 30px 0;
+}
+
+.chat-body, .contato-form{ margin: 0 auto; }
+
+.chat-body {
+	height: 408px;
+	max-height: 508px;
+    margin: 0 0.8em;
+	padding-right: 0.8em;
+	overflow-y: scroll;
+	transition: 0.2s ease-out;
+}
+
+.chat-body::-webkit-scrollbar { width: 0.5em; }
+
+.chat-body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.3);
+}
+
+.chat-body::-webkit-scrollbar-thumb:window-inactive {
+	 background: rgba(0,0,0,0.13);
+ }
+
+.msg{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.msg span{
+	color: #444;
+	font-weight: lighter;
+	clear: both;
+}
+
+.msg p{
+	width: fit-content;
+	padding: 10px 15px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.bot{ align-items: flex-start; }
+
+.bot p{
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 20px 20px 20px 1px;
+}
+
+.user{ align-items: flex-end; }
+
+.user p{
+	background: #045449;
+	color: #eee;
+	border: 1px solid #045449;
+	border-radius: 20px 20px 1px 20px;
+}
+
+.chat-footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 48px;
+    margin-top: 24px;
+	padding: 0em 0.8em;
+    font-size: 14px;
+}
+
+.chat-footer input{
+    width: calc(100% - 50px);
+    padding: 0 18px;
+    color: #222;
+    background-color: #ffff;
+    border: 1px solid #efefef;
+    border-radius: 24px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.chat-footer input:hover, .chat-footer input:focus{
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.chat-footer .send-btn{
+    width: 48px;
+    height: 48px;
+    margin-left: 5px;
+    background-image: url(../images/send2.png);
+    background-color: #045449;
+    background-repeat: no-repeat;
+    background-position: 55% center;
+    background-size: 24px 24px;
+    border: none;
+    border-radius: 24px;
+    opacity: 0.85;
+    transition: 0.25s;
+}
+
+.chat-footer .send-btn:hover{
+	opacity: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.chat-footer .send-btn:focus{
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+.form-control{
+    height: 48px;
+    margin: 10px 0;
+    padding: 0px 20px;
+    font-size: 1.2em;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.btn-form{
+    height: 48px;
+    padding: 0px 20px;
+    background: #069959;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.btn-form:hover{
+    background: #045449;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+footer p{
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding: 20px;
+	color: #eee;
+	background: linear-gradient(45deg, #069959, #010f39);
+}
+
+.anim{
+	/* opacity: 0; */
+	transform: translateX(-50px);
+	transition: .3s ease-out;
+}
+
+.anim-init{
+	transform: translateX(0px);
+	opacity: 1;
+
+}
+
+@media (min-width: 992px) {
+	.msg p{
+		max-width: 80%;
+	}
+}

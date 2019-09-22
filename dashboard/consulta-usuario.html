@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Consulta de Usuário - Invest.AI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="../style/dash-style.css">
+    <script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+    <!-- INICIO NAV -->
+    <nav class="navbar navbar-expand-xl-12 navbar-light fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="hline"></div>
+            <a class="navbar-brand" href="#"><img src="../images/logo2.png" alt="Logo Invest.AI"></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tipos de Investimento <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/como-funciona.html">Instituições</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobre-nos.html">Usuários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contato.html">Perfis</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- FIM NAV -->
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="container section s-intro">
+                <h2>Consultar Usuários</h2>
+                <p>Consulte os usuários cadastrados.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="container section s-pesquisa">
+                <input type="text" id="chatInput" placeholder="Digite o nome do perfil" onkeypress="return newEvent(event)"/>
+                <button type="button" name="button" onclick="sendMessage()" class="pesquisa-btn"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="container section">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../scripts/validacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<style>
+				html{
+					transition: scroll 10000s;	
+				}
+			</style>
+	
+	<title>invest.Ai - Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<!-- INICIO NAV -->
+	<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#vid"><img src="./images/logo2.png" alt="Logo Invest.AI"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto ">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/como-funciona.html">Como funciona?</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/sobre-nos.html">Sobre Nós</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./pages/contato.html">Contato</a>
+					</li>
+				</ul>
+				<a href="./pages/login.html" class="btn btn-nav my-2 my-sm-0">Entrar</a>
+			</div>
+		</div>
+	</nav>
+	<!-- FIM NAV -->
+	
+	<!-- INICIO HEADER (JUMBOTRON) -->
+	<header class="jumbotron">
+		<div class="container text-light" id="jumbotron-welcome">
+			<h1 class="">Converse.
+				Aprenda.
+				Invista.</h1>
+				<p class="lead text-gray">Te ajudamos a investir e fazer o dinheiro trabalhar para você.</p>
+			</div>
+		</header>
+		<!-- FIM HEADER -->
+		
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="container section s-intro anim">
+					<h2>Hora de investir!</h2>
+					<p>Investir parece ser complicado mas podemos te provar o contrário, <strong>experimente o chat abaixo</strong> pra traçar seu perfil de investidor, receber recomendações e tirar duvidas sobre qualquer tipo de investimento.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="container-fluid chat">
+			<div class="row justify-content-md-center">
+				<div class="col-md-8 col-lg-8 col-xl-6">
+					<div class="chat-body" id="chat-body">
+						<div class="msg bot">
+							<span>Bot</span>
+							<p>Bem vindo ao invest.Ai</p>
+						</div>
+						
+						<div class="msg bot">
+							<span>Bot</span>
+							<p>Eu sou o bot, como você se chama?</p>
+						</div>
+						
+						<div class="msg user">
+							<span>Você</span>
+							<p>Oi, me chamo Pedro</p>
+						</div>
+
+						<div class="msg bot">
+								<span>Bot</span>
+								<p>Bom Pedro, eu posso tirar qualquer muitas dúvidas sobre o mundo dos investimentos.</p>
+							</div>
+
+							<div class="msg bot">
+									<span>Bot</span>
+									<p>Basta perguntar, ex.: O que é um CDB?</p>
+								</div>
+					</div>
+					<div class="chat-footer">
+						<input type="text" id="chatInput" placeholder="Digite uma mensagem..." onkeypress="return newEvent(event)"/>
+						<button type="button" name="button" onclick="sendMessage()" class="send-btn"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="container section s-card">
+				<h2>Saiba mais</h2>
+				<div class="row justify-content-center">
+					<div class="text-center col-lg-4">
+						<img src="./images/icon_perfil.png" alt="">
+						<h3>Perfil de investidor</h3>
+						<p>Para saber qual a melhor opção de investimento para você e recomendar as melhores opções de investimento, o bot fará algumas perguntas para traçar o seu perfil de investidor, assim você investir com mais segurança.</p>
+					</div>
+					<div class="text-center col-lg-4">
+						<img src="./images/icon_where.png" alt="">
+						<h3>Onde investir</h3>
+						<p>Após ter seu perfil definido, você pode perguntar qual o melhor investimento para você, respondendo apenas o valor a ser investido e o tempo de investimento, você pode fazer isso quantas vezes quiser.</p>
+					</div>
+					<div class="text-center col-lg-4">
+						<img src="./images/icon_questions.png" alt="">
+						<h3>Tire dúvidas</h3>
+						<p>Nosso bot está super atento, irá responder qualquer duvida que você tenha sobre qualquer tipo de investimento, mesmo se você não tiver traçado seu perfil.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="text-center">
+				<p>Invest.AI - Todos os direitos reservados - 2018</p>
+			</div>
+		</footer>
+		
+		<div id="vid">
+			
+		</div>
+		<script src="/scripts/actions.js" type="text/javascript"></script>
+		<script src="/scripts/chat.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</body>
+	</html>
+	
